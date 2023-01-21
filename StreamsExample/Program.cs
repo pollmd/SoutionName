@@ -8,23 +8,15 @@ namespace StreamsExample
     {
         static void Main(string[] args)
         {
-            var filePath = "log.txt";
-            using (FileStream fs = new FileStream(filePath,FileMode.OpenOrCreate))
-            {
-                //BinaryWriter bw = new BinaryWriter(fs);
-                //string inputText = Console.ReadLine();
-
-                //int number = 1235;
-
-                //bw.Write(inputText);
-                //bw.Write(number);
+            //var filePath = "log.txt";
+            //using (FileStream fs = new FileStream(filePath,FileMode.OpenOrCreate))
+            //{
 
 
-                RegexExample.EmailPattern();
+            //}
 
-
-
-            }
+            var obj = new SerializeSample();
+            obj.SerializeJson();
         }
 
 

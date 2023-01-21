@@ -7,7 +7,7 @@ namespace StreamsExample
 {
     internal class RegexExample
     {
-        public static void EmailPattern()
+        private void EmailPattern()
         {
             string emailPattern = "[a-z0-9_-]+@[a-z0-9_-]+.[a-z]";
 
