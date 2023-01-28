@@ -8,15 +8,8 @@ namespace StreamsExample
     {
         static void Main(string[] args)
         {
-            //var filePath = "log.txt";
-            //using (FileStream fs = new FileStream(filePath,FileMode.OpenOrCreate))
-            //{
-
-
-            //}
-
             var obj = new SerializeSample();
-            obj.SerializeJson();
+            obj.DeserializeJson();
         }
 
 

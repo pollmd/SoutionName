@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamsExample", "StreamsExample\StreamsExample.csproj", "{741B31BB-6601-4C48-A687-7E491CC12DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamsExample", "StreamsExample\StreamsExample.csproj", "{741B31BB-6601-4C48-A687-7E491CC12DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarbageCollection", "GarbageCollection\GarbageCollection.csproj", "{62D3A1B7-4ED2-432F-AA60-47253D03403A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{741B31BB-6601-4C48-A687-7E491CC12DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{741B31BB-6601-4C48-A687-7E491CC12DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{741B31BB-6601-4C48-A687-7E491CC12DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D3A1B7-4ED2-432F-AA60-47253D03403A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D3A1B7-4ED2-432F-AA60-47253D03403A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D3A1B7-4ED2-432F-AA60-47253D03403A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D3A1B7-4ED2-432F-AA60-47253D03403A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

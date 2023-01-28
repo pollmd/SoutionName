@@ -37,11 +37,11 @@ namespace StreamsExample
 
             var xmlserializer = new XmlSerializer(typeof(List<Person>));
 
-            using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
-            {
+            using FileStream fs = new FileStream(filePath, FileMode.Open);
+            
                 xmlserializer.Serialize(fs, persons);
 
-            }
+            
         }
 
         public void SerializeJson()
@@ -78,6 +78,25 @@ namespace StreamsExample
                 fs.Write(buffer);
             }
         }
+
+        public void DeserializeJson()
+        {
+            var filePath = "persons.json";
+            using (FileStream fs = new FileStream(filePath, FileMode.Open))
+            {
+                byte[] buffer = new byte[(int)fs.Length];
+
+                fs.Read(buffer);
+
+                var json = Encoding.Default.GetString(buffer);
+                var persons = JsonSerializer.Deserialize<List<Person>>(json);
+
+                foreach(var p in persons)
+                {
+                    Console.WriteLine($"{p.Id}. {p.Name} {p.Age}");
+                }
+            }
+        }
     }
 
     [Serializable]
@@ -86,9 +105,5 @@ namespace StreamsExample
         public int Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
-
-        //[NonSerialized]
-        public const string Info = "Info";
-
     }
 }
